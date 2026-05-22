@@ -23,7 +23,7 @@ export default function AdminGallery() {
   const fileRef = useRef()
 
   const fetchPhotos = async () => {
-    const r = await fetch('http://localhost:3001/api/gallery')
+    const r = await fetch('/api/gallery')
     setPhotos(await r.json())
   }
 
@@ -57,7 +57,7 @@ export default function AdminGallery() {
     fd.append('category', category)
     fd.append('caption', caption)
     try {
-      const r = await fetch('http://localhost:3001/api/gallery/upload', { method: 'POST', body: fd })
+      const r = await fetch('/api/gallery/upload', { method: 'POST', body: fd })
       const d = await r.json()
       if (!r.ok) throw new Error(d.error)
       setUploadMsg('✅ Photo uploaded successfully!')
@@ -74,7 +74,7 @@ export default function AdminGallery() {
   const handleDelete = async (id) => {
     if (!window.confirm('Delete this photo?')) return
     setDeleting(id)
-    await fetch(`http://localhost:3001/api/gallery/${id}`, {
+    await fetch(`/api/gallery/${id}`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: 'london2026' }),
@@ -204,7 +204,7 @@ export default function AdminGallery() {
                 <div key={photo.id} className="manage-card">
                   <div className="manage-img-wrap">
                     <img
-                      src={`http://localhost:3001${photo.url}`}
+                      src={`${photo.url}`}
                       alt={photo.caption || photo.category}
                       loading="lazy"
                     />
