@@ -1,0 +1,81 @@
+.why {
+  padding: 6rem 0;
+  background: var(--gray-50);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.why-card {
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  cursor: default;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.why-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.why-card--blue { background: linear-gradient(135deg, #e0f7ff, #dbeafe); }
+.why-card--green { background: linear-gradient(135deg, #f0fdf4, #dcfce7); }
+.why-card--orange { background: linear-gradient(135deg, #fff7ed, #ffedd5); }
+.why-card--purple { background: linear-gradient(135deg, #f5f3ff, #ede9fe); }
+.why-card--pink { background: linear-gradient(135deg, #fdf2f8, #fce7f3); }
+.why-card--yellow { background: linear-gradient(135deg, #fef9c3, #fef3c7); }
+.why-card--teal { background: linear-gradient(135deg, #f0fdfa, #ccfbf1); }
+.why-card--red { background: linear-gradient(135deg, #fff1f2, #ffe4e6); }
+.why-card--lime { background: linear-gradient(135deg, #f7fee7, #ecfccb); }
+
+.why-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+  display: block;
+  animation: float 5s ease-in-out infinite;
+}
+
+.why-card:hover .why-icon {
+  transform: scale(1.2) rotate(-5deg);
+  animation: none;
+}
+
+.why-title {
+  font-family: var(--font-baloo);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.3;
+}
+
+.why-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: 0.6s ease;
+  transform: skewX(-15deg);
+}
+
+.why-card:hover .why-shine { left: 150%; }
+
+/* Center last card in last row */
+.why-grid > :last-child:nth-child(3n-1) { grid-column: 2; }
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid > :last-child:nth-child(3n-1) { grid-column: auto; }
+}
+@media (max-width: 540px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
