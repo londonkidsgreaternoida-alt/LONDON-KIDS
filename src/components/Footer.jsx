@@ -30,7 +30,7 @@ export default function Footer() {
                 <a href="#" className="fsocial-link" id="footer-fb" aria-label="Facebook">📘</a>
                 <a href="#" className="fsocial-link" id="footer-ig" aria-label="Instagram">📸</a>
                 <a href="#" className="fsocial-link" id="footer-yt" aria-label="YouTube">📺</a>
-                <a href="https://wa.me/919876543210" className="fsocial-link" id="footer-wa" aria-label="WhatsApp">💬</a>
+                <a href="https://wa.me/919236488036" className="fsocial-link" id="footer-wa" aria-label="WhatsApp">💬</a>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
                 </div>
                 <div className="fci-item">
                   <span>📞</span>
-                  <a href="tel:+919876543210">+91 98765 43210</a>
+                  <a href="tel:+919236488036">+91 92364 88036</a>
                 </div>
                 <div className="fci-item">
                   <span>✉️</span>

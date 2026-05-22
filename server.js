@@ -198,7 +198,7 @@ app.post('/api/admission', async (req, res) => {
               </div>
               <div style="background:#fff7ed;border-radius:12px;padding:16px 20px;border-left:4px solid #fb923c;">
                 <p style="margin:0;color:#9a3412;font-size:14px;line-height:1.8;">
-                  📞 <a href="tel:+919876543210" style="color:#0369a1;font-weight:700;">+91 98765 43210</a><br/>
+                  📞 <a href="tel:+919236488036" style="color:#0369a1;font-weight:700;">+91 92364 88036</a><br/>
                   📍 T9,004, Ace Divino, Sector 1, Greater Noida West, UP – 201306<br/>
                   🕐 Mon–Fri: 8:00 AM – 12:00 PM | Day Care: 7 Days, 7 AM – 10 PM
                 </p>
@@ -291,7 +291,7 @@ app.post('/api/contact', async (req, res) => {
               </p>
               <div style="background:#f0f9ff;border-radius:12px;padding:16px 20px;border-left:4px solid #0ea5e9;margin:16px 0;">
                 <p style="margin:0;color:#0369a1;font-size:14px;line-height:1.8;">
-                  📞 <a href="tel:+919876543210" style="color:#0369a1;font-weight:700;">+91 98765 43210</a><br/>
+                  📞 <a href="tel:+919236488036" style="color:#0369a1;font-weight:700;">+91 92364 88036</a><br/>
                   📍 Ace Divino, Sector 1, Greater Noida West, UP – 201306<br/>
                   🕐 Mon–Sat: 8:00 AM – 2:00 PM
                 </p>

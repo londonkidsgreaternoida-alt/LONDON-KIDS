@@ -134,7 +134,7 @@ export default function Admissions() {
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="phone">Phone Number *</label>
-                    <input id="phone" type="tel" placeholder="+91 98765 43210" required
+                    <input id="phone" type="tel" placeholder="+91 92364 88036" required
                       value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} />
                   </div>
                   <div className="form-group">

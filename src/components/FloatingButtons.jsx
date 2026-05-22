@@ -16,7 +16,7 @@ export default function FloatingButtons() {
     <>
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/919876543210?text=Hello! I want to know about admissions at London Kids School, Greater Noida West."
+        href="https://wa.me/919236488036?text=Hello! I want to know about admissions at London Kids School, Greater Noida West."
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-btn"

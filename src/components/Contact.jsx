@@ -45,15 +45,15 @@ export default function Contact() {
 
         {/* Contact Cards */}
         <div className="contact-cards reveal">
-          <a href="tel:+919876543210" className="contact-card contact-card--blue" id="contact-phone">
+          <a href="tel:+919236488036" className="contact-card contact-card--blue" id="contact-phone">
             <div className="cc-icon">📞</div>
             <div className="cc-info">
               <div className="cc-label">Call Us</div>
-              <div className="cc-value">+91 98765 43210</div>
+              <div className="cc-value">+91 92364 88036</div>
             </div>
           </a>
           <a
-            href="https://wa.me/919876543210?text=Hello! I want to know about admissions at London Kids School."
+            href="https://wa.me/919236488036?text=Hello! I want to know about admissions at London Kids School."
             target="_blank" rel="noopener noreferrer"
             className="contact-card contact-card--green" id="contact-whatsapp"
           >
@@ -141,7 +141,7 @@ export default function Contact() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="contact-phone">Phone Number *</label>
-                  <input id="contact-phone" type="tel" placeholder="+91 98765 43210" required
+                  <input id="contact-phone" type="tel" placeholder="+91 92364 88036" required
                     value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} />
                 </div>
                 <div className="form-group">
