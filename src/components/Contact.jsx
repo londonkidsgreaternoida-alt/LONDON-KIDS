@@ -63,11 +63,11 @@ export default function Contact() {
               <div className="cc-value">Chat with us</div>
             </div>
           </a>
-          <a href="mailto:info@londonkidsschool.in" className="contact-card contact-card--orange" id="contact-email">
+          <a href="mailto:contact@londonkidsindia.com" className="contact-card contact-card--orange" id="contact-email">
             <div className="cc-icon">✉️</div>
             <div className="cc-info">
               <div className="cc-label">Email Us</div>
-              <div className="cc-value">info@londonkidsschool.in</div>
+              <div className="cc-value">contact@londonkidsindia.com</div>
             </div>
           </a>
         </div>

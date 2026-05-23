@@ -76,7 +76,7 @@ export default function Footer() {
                 </div>
                 <div className="fci-item">
                   <span>✉️</span>
-                  <a href="mailto:info@londonkidsschool.in">info@londonkidsschool.in</a>
+                  <a href="mailto:contact@londonkidsindia.com">contact@londonkidsindia.com</a>
                 </div>
                 <div className="fci-item">
                   <span>🕐</span>
