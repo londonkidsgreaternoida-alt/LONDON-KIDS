@@ -111,16 +111,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Social */}
-            <div className="social-section">
-              <p className="social-title">Follow Us</p>
-              <div className="social-links">
-                <a href="#" className="social-link" id="social-fb" aria-label="Facebook">📘</a>
-                <a href="#" className="social-link" id="social-ig" aria-label="Instagram">📸</a>
-                <a href="#" className="social-link" id="social-yt" aria-label="YouTube">📺</a>
-                <a href="#" className="social-link" id="social-wa" aria-label="WhatsApp">💬</a>
-              </div>
-            </div>
+
           </div>
 
           {/* Contact Form */}

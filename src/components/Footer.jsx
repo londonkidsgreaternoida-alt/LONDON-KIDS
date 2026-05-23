@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="footer-col">
               <h4 className="footer-col-title">Quick Links</h4>
               <ul className="footer-links">
-                {[['Home','#home'],['About Us','#about'],['Programs','#programs'],['Facilities','#facilities'],['Gallery','#gallery'],['Admissions','#admissions'],['Contact','#contact']].map(([label, href]) => (
+                {[['Home','#home'],['About Us','#about'],['Programs','#programs'],['Facilities','#facilities'],['Admissions','#admissions'],['Contact','#contact']].map(([label, href]) => (
                   <li key={href}>
                     <a href={href} onClick={e => { e.preventDefault(); scrollTo(href) }}>
                       <span>→</span> {label}

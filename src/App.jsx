@@ -7,7 +7,6 @@ import Programs from './components/Programs'
 import DayCare from './components/DayCare'
 import WhyChooseUs from './components/WhyChooseUs'
 import Facilities from './components/Facilities'
-import Gallery from './components/Gallery'
 import Admissions from './components/Admissions'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
@@ -54,7 +53,6 @@ function App() {
         <DayCare />
         <WhyChooseUs />
         <Facilities />
-        <Gallery />
         <Admissions />
         <Testimonials />
         <Contact />
