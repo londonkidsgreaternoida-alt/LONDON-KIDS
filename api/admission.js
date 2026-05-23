@@ -1,9 +1,6 @@
-import { Resend } from 'resend'
 import nodemailer from 'nodemailer'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-const EMAIL_TO   = process.env.EMAIL_TO   || 'londonkids.greaternoida@gmail.com'
-const EMAIL_FROM = process.env.EMAIL_FROM || 'onboarding@resend.dev'
+const EMAIL_TO = process.env.EMAIL_TO || 'contact@londonkidsindia.com'
 
 const gmail = nodemailer.createTransport({
   service: 'gmail',
@@ -22,10 +19,10 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Required: name, parent, phone, program' })
 
   try {
-    // Notify school via Resend
-    await resend.emails.send({
-      from: `London Kids School <${EMAIL_FROM}>`,
-      to: [EMAIL_TO],
+    // ── 1. Notify school at contact@londonkidsindia.com ──────────────────────
+    await gmail.sendMail({
+      from: `"London Kids School Website 🐯" <${process.env.GMAIL_USER}>`,
+      to: EMAIL_TO,
       subject: `🎒 New Admission Enquiry – ${name} (${program})`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;">
@@ -68,7 +65,7 @@ export default async function handler(req, res) {
         </div>`,
     })
 
-    // Confirmation to parent via Gmail
+    // ── 2. Confirmation to parent ────────────────────────────────────────────
     if (email) {
       try {
         await gmail.sendMail({
@@ -110,12 +107,12 @@ export default async function handler(req, res) {
               </div>
             </div>`,
         })
-      } catch (_) { /* Gmail optional */ }
+      } catch (_) { /* optional */ }
     }
 
     res.status(200).json({ success: true, message: 'Enquiry submitted! You will receive a confirmation email shortly.' })
   } catch (err) {
-    console.error('Admission error:', err)
-    res.status(500).json({ error: err.message })
+    console.error('Admission error:', err.message)
+    res.status(500).json({ error: 'Failed to send email. Please call us directly at +91 92364 88036' })
   }
 }
